@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <!-- Sidebar-->
+  <body>
+    <div class="sidebar close">
+      <div class="logo-details">
+        <i class="bx bxl-c-plus-plus"></i>
+        <span class="logo_name">recruitSource</span>
+      </div>
+      <ul class="nav-links">
+        <li>
+          <div class="iocn-link">
+            <span class="link_name">Prescreen Templates</span>
+          </div>
+          <ul class="sub-menu">
+            <li><a class="link_name" href="#">Category</a></li>
+            <li><a href="#">Product</a></li>
+            <li><a href="#">Systems</a></li>
+            <li><a href="#">Machine Learning</a></li>
+            <li><a href="#">iOS</a></li>
+            <li><a href="#">Android</a></li>
+          </ul>
+        </li>
+        <li>
+          <div class="iocn-link">
+            <span class="link_name">Role Specific Questions</span>
+          </div>
+          <ul class="sub-menu">
+            <li><a class="link_name" href="#">Category</a></li>
+            <li><a id="page-product" href="#">Product</a></li>
+            <li><a id="page-systems">Systems</a></li>
+            <li><a id="page-ml" href="#">Machine Learning</a></li>
+            <li><a id="page-ios" href="#">iOS</a></li>
+            <li><a id="android" href="#">Android</a></li>
+          </ul>
+        </li>
+        <li>
+          <div class="iocn-link">
+            <span class="link_name">Resources</span>
+          </div>
+          <ul class="sub-menu">
+            <li><a class="link_name" href="#">Resources</a></li>
+            <li><a href="#">Bootcamp</a></li>
+            <li><a href="#"></a></li>
+          </ul>
+        </li>
+        <li>
+          <div class="iocn-link">
+            <span class="link_name">Pitch Points</span>
+          </div>
+          <ul class="sub-menu">
+            <li><a class="link_name" href="#">Resources</a></li>
+            <li><a href="#">Bootcamp</a></li>
+            <li><a href="#"> FB’s elevator pitch on remote</a></li>
+          </ul>
+        </li>
+        <li>
+          <div class="iocn-link">
+            <span class="link_name">Candidate FAQs</span>
+          </div>
+          <ul class="sub-menu">
+            <li><a class="link_name" href="#">Compensation</a></li>
+            <li><a href="#">Remote Setup</a></li>
+            <li><a href="#">Office Visits</a></li>
+            <li><a href="#">Travel Expenses</a></li>
+          </ul>
+        </li>
+        <li>
+          <div class="iocn-link">
+            <span class="link_name">Your Script</span>
+          </div>
+          <ul class="sub-menu">
+            <li><a class="link_name" href="#">Resources</a></li>
+            <li><a href="#">Bootcamp</a></li>
+            <li><a href="#"> FB’s elevator pitch on remote</a></li>
+            
+          </ul>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-cog"></i>
+            <span class="link_name">Setting</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="#">Setting</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <!-- Center Container -->
+    <div class="container">
+      <div class="title">Prescreen - Product</div>
+      <div class="content">
+        <form action="#">
+          <div class="user-details">
+            <div class="input-box">
+              <span class="details">Legal Full Name</span>
+              <input type="text" placeholder="Enter TC name" required />
+            </div>
+            <div class="input-box">
+              <span class="details">Prefer Email</span>
+              <input type="text" placeholder="Enter TC email" required />
+            </div>
+            <div class="input-box">
+              <span class="details">Prefer Phone</span>
+              <input type="text" placeholder="Enter TC Phone number" required />
+            </div>
+            <div class="input-box">
+              <span class="details">Location Preference</span>
+              <input
+                type="text"
+                id="location"
+                placeholder="MPK, NYC, DC, SF, Boston, SEA, Remote"
+                required
+              />
+            </div>
+            <div class="input-box">
+              <span class="details">Company / Title</span>
+              <input type="text" placeholder="Enter Company / Title" required />
+            </div>
+            <div class="input-box">
+              <span class="details">Cross Company Level (If Applicable)</span>
+              <input type="text" placeholder="N/A in not applicable" required />
+            </div>
+            <div class="input-box long">
+              <span class="details"
+                >Describe Current Team Structure or Scope of Leading
+                Projects:</span
+              >
+              <textarea name="paragraph_text" cols="50" rows="10"></textarea>
+            </div>
+            <!--
+            <div class="input-box long">
+              <span class="details">Describe Current Team Structure or Scope of Leading Projects:</span>
+              <input type="text" placeholder="The good stuff" required>
+            </div>
+            -->
+            <div class="input-box long">
+              <span class="details">Leadership</span>
+              <textarea name="paragraph_text" cols="50" rows="10"></textarea>
+            </div>
+            <div class="input-box long">
+              <span class="details">Design/architecture</span>
+              <textarea name="paragraph_text" cols="50" rows="10"></textarea>
+            </div>
+            <div class="input-box">
+              <span class="details">Strongest coding language</span>
+              <input type="text" placeholder="Please don't say C#" required />
+            </div>
+            <div class="input-box long">
+              <span class="details">Responsibilities</span>
+              <textarea
+                name="paragraph_text"
+                placeholder="% Time Coding vs Design vs Leadership vs Mentoring"
+                cols="50"
+                rows="10"
+              ></textarea>
+            </div>
+            <div class="input-box long">
+              <span class="details">Scope</span>
+              <input
+                type="text"
+                placeholder="Why are we targeting IC5 vs IC6?"
+                required
+              />
+            </div>
+            <div class="input-box">
+              <span class="details">Total Years of Experience in Industry</span>
+              <input type="text" placeholder="6+" required />
+            </div>
+            <div class="input-box long">
+              <span class="details">Domain Expertise Strength/Interest </span>
+              <textarea name="paragraph_text" cols="50" rows="10"></textarea>
+            </div>
+            <div class="input-box">
+              <span class="details">Internal Referral at FB</span>
+              <input type="text" placeholder="N/A if none" required />
+            </div>
+            <div class="input-box long">
+              <span class="details">Explain Gaps in Career or Short Roles</span>
+              <input type="text" placeholder="N/A if none" required />
+            </div>
+            <div class="input-box">
+              <span class="details"
+                >Have You Interviewed with Facebook in the Pas</span
+              >
+              <input type="text" placeholder="N/A if none" required />
+            </div>
+            <div class="input-box">
+              <span class="details">Timeline to Interview</span>
+              <input type="text" placeholder="Interview timeline" required />
+            </div>
+            <div class="input-box">
+              <span class="details"
+                >Actively Interviewing at What Companies</span
+              >
+              <input type="text" placeholder="Enter companies" required />
+            </div>
+            <div class="input-box">
+              <span class="details">Reason for Looking/Motivators</span>
+              <input
+                type="text"
+                placeholder="Reason for Looking/Motivators"
+                required
+              />
+            </div>
+            <div class="input-box">
+              <span class="details">Time Constraints</span>
+              <input type="text" placeholder="Time constraints" required />
+            </div>
+            <div class="input-box">
+              <span class="details">Dual Tracked With Other FB Roles</span>
+              <input
+                type="text"
+                placeholder="Dual Tracked With Other FB Roles"
+                required
+              />
+            </div>
+            <div class="input-box">
+              <span class="details">Next Steps</span>
+              <input
+                type="text"
+                placeholder="Commitment/Immigration Form/Availability"
+                required
+              />
+            </div>
+          </div>
+          <div class="decision-details">
+            <input type="radio" name="gender" id="dot-1" />
+            <input type="radio" name="gender" id="dot-2" />
+            <input type="radio" name="gender" id="dot-3" />
+            <span class="decision-title">Decision</span>
+            <div class="category">
+              <label for="dot-1">
+                <span class="dot one"></span>
+                <span class="decision">Yes</span>
+              </label>
+              <label for="dot-2">
+                <span class="dot two"></span>
+                <span class="decision">No</span>
+              </label>
+            </div>
+            <div class="button-section">
+              <div class="button">
+                <input type="submit" value="Copy to clipboard" />
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!--Container 2 -->
+    <div class="container2">
+      <article id="container2-details">
+        <p>CANDIDATE FAQs</p>
+        <p>
+          Compensation - is there a difference in my compensation if I chose
+          in-office vs remote?
+        </p>
+        <p>
+          Potentially yes. Facebook&rsquo;s compensation philosophy is pay for
+          performance and guided by the cost of labour of your chosen work
+          location - we pay at the top of the market and total compensation
+          includes a mix of base salary, bonus, and equity. Benefits by country
+          here.
+        </p>
+        <p>
+          Example: If you moved, from 1 office location to another office
+          location OR one country to another country, your compensation would be
+          re-evaluated in the same manner that we approach remote vs office.
+        </p>
+        <p>
+          Compensation - will taxation differ on my income, base, bonus,
+          RSU&rsquo;s in Canada vs US?
+        </p>
+        <p>
+          Potentially yes. US, State and federal tax treatments differ from
+          Canada provincial and federal regulations. We recommend seeking
+          professional tax advice to make an informed decision.
+        </p>
+        <p>
+          Remote Setup - can I expense my home office setup and ongoing
+          expenses, such as my internet?
+        </p>
+        <p>
+          You will be provided with all equipment required to perform your role.
+          In addition, to start, a one-time taxable cash benefit of
+          $2,000USD/2,300CAD. A yearly benefit to reimburse your internet up to
+          $900USD (or local equivalent). In addition, an annual office supply
+          stipend of $1,100USD/1,400CAD.
+        </p>
+        <p>
+          Office visits - I see an office would be near me, could I still visit?
+        </p>
+        <p>
+          Yes, however, remote workers should only visit an office occasionally
+          for team meetings, critical business meetings, events, and occasional
+          social visits. These discretionary visits should be limited to 2 days
+          per month (excluding any required business travel into any office).
+        </p>
+        <p>
+          Yes, however, remote workers should only visit an office occasionally
+          for team meetings, critical business meetings, events, and occasional
+          social visits. These discretionary visits should be limited to 2 days
+          per month (excluding any required business travel into any office).
+        </p>
+        <p>
+          Yes, however, remote workers should only visit an office occasionally
+          for team meetings, critical business meetings, events, and occasional
+          social visits. These discretionary visits should be limited to 2 days
+          per month (excluding any required business travel into any office).
+        </p>
+        <p>
+          Yes, however, remote workers should only visit an office occasionally
+          for team meetings, critical business meetings, events, and occasional
+          social visits. These discretionary visits should be limited to 2 days
+          per month (excluding any required business travel into any office).
+        </p>
+        <p>
+          Yes, however, remote workers should only visit an office occasionally
+          for team meetings, critical business meetings, events, and occasional
+          social visits. These discretionary visits should be limited to 2 days
+          per month (excluding any required business travel into any office).
+        </p>
+        <p>
+          Yes, however, remote workers should only visit an office occasionally
+          for team meetings, critical business meetings, events, and occasional
+          social visits. These discretionary visits should be limited to 2 days
+          per month (excluding any required business travel into any office).
+        </p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

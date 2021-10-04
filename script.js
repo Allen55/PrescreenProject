@@ -1,0 +1,54 @@
+let arrow = document.querySelectorAll(".arrow");
+for (var i = 0; i < arrow.length; i++) {
+  arrow[i].addEventListener("click", (e)=>{
+ let arrowParent = e.target.parentElement.parentElement;//selecting main parent of arrow
+ arrowParent.classList.toggle("showMenu");
+  });
+}
+
+// Appending info
+
+const pageProduct = document.getElementById("page-product");
+const pageSystems = document.getElementById("page-systems");
+const pageMl = document.getElementById("page-ml");
+const pageIos = document.getElementById("page-ios");
+const test5 = document.getElementById("page-android");
+
+
+const newData = document.createElement("div");
+
+
+pageProduct.addEventListener("click", function() {
+  const content = document.getElementById("container2-details");
+  // content.remove();
+  const added = content.innerHTML = `<p><strong>Background:</strong> <br> Question: High level overview of your background? <br> Walk me through a typical project and your key responsibilities <br>*How did the project come about? <br> Did you find the problem or something that needed to be fixed, how did you address it? <br>*What was the impact of your current project<br> *How is your team structured? Who do you report to?<br> *Are you working on Distributed Systems vs Single Machine? <br>*What % time coding vs % time design and Architecture?  <br> <br> Signals: IC4 = will mostly be heads down working on a task or feature. They will have the ability to be productive and string together a set of tasks. Expect them at a high level to know how all the pieces fit together. Will not be able to resolve problems on their own. Strong understanding of codebase and systems. <br>IC5 = will be working on whole projects and systems. Very independent. Want to make sure they can drive the discussion, figure out components of the system, what new features should they be adding, debug, and evaluate the system. Should know how to encode the system, handle corner cases, an expert in E2E understanding. <br>IC6 = Thinking about single systems they are working on and interactions with other teams. They have lead one major imitative successfully. They are thinking about the longer term goals for the team. Responsible for the success of the whole team. Able to talk in great depths about system level challenges and issues. Solve technical problems that few others can. Help recruit, and onboard new members into their team.</p>`;
+  added.append();
+  console.log("Clicked");
+});
+
+pageSystems.addEventListener("click", function() {
+  const content = document.getElementById("container2-details");
+  // content.remove();
+  const added = content.innerHTML = `<p><strong>Background:</strong> <br> Question: High level overview of your background? <br> Walk me through a typical project and your key responsibilities <br>*How did the project come about? <br> Did you find the problem or something that needed to be fixed, how did you address it? <br>*What was the impact of your current project<br> *How is your team structured? Who do you report to?<br> *Are you working on Distributed Systems vs Single Machine? <br>*What % time coding vs % time design and Architecture?  <br> <br> Signals: IC4 = will mostly be heads down working on a task or feature. They will have the ability to be productive and string together a set of tasks. Expect them at a high level to know how all the pieces fit together. Will not be able to resolve problems on their own. Strong understanding of codebase and systems. <br>IC5 = will be working on whole projects and systems. Very independent. Want to make sure they can drive the discussion, figure out components of the system, what new features should they be adding, debug, and evaluate the system. Should know how to encode the system, handle corner cases, an expert in E2E understanding. <br>IC6 = Thinking about single systems they are working on and interactions with other teams. They have lead one major imitative successfully. They are thinking about the longer term goals for the team. Responsible for the success of the whole team. Able to talk in great depths about system level challenges and issues. Solve technical problems that few others can. Help recruit, and onboard new members into their team.</p>`;
+  added.append();
+  console.log("Clicked");
+});
+
+pageMl.addEventListener("click", function() {
+  const deleted = document.getElementById("container2-details");
+  // deleted.remove();
+  const added = deleted.innerHTML = `<p>Question #1: What areas of machine learning do you most often work with e.g. ranking, computer vision, natural language processing)?</p> 
+  <p>What kind of projects have you done there?  What type of ML models are you building on the project? <br>Candidate Answer:</p> 
+  <p> Technologies you use:</p> <p>Ideal Answer: Most ML teams here are working on recommendation, ranking, classification, clustering, optimization, time series, NLP, bayesian, predictive, relevance, regression, decision trees, and fraud detection type problems.  Reject if: they are solely working on Computer Vision or Image processing. TC is likely more suitable for our spec tech teams. If they are very research oriented they are better for FAIR or FAIAR or FRL Please send Spec Tech Candidates to the email alias: MLSpecProfileReview@fb.com Ideal Technologies Answer: Python/Java, some c++, tensorFlow, Pytorch, OR Caffe2, CNTK, MXNET, Scikit-learn, and Pandas.  Reject Technologies If: TC is coding in R or SQL they are not a fit for our ML Engineering roles. They would be a better candidate for our Data Science roles - share with a sourcer on DS.</p> <p> Question #2: Are you responsible for the end-to-end lifecycle of these ML models  (ie. design, prototyping, deployment and productionalizing)</p>
+  <p>Candidate Answer:</p><p> Ideal Answer: TC is responsible for the full end to end life cycle of the machine learning models (i.e) - Design, building, implementing, productionizing. Reject if: The candidate is not working on ML modeling but building the infrastructure that the ML is running on then pivot to ML infra or sys gen. If the candidate is just model building and not writing production code, they will not pass our coding interviews.</p><p>Question #3: How much of your day is spent in research/model building vs writing production level code? Candidate Answer:</p><p>Ideal Answer: Should be around 50/70 percent model building vs 50/30 percent writing production level code. Here at FB it varies from team to team but in general most ML engineers are doing 60/70 percent model building vs 40/30 percent writing production level code.</p><p>Why interviewing: Question: What are you looking for in a new role? *Why are they looking? If they&rsquo;re not active- what are the key motivations and drivers for considering a career move at this time? *Are you actively looking for a new role? If so where? *What does your timeline look like?   Interview Activity: *Where are they interviewing? *What stage(s) are they in? *When do you expect to hear back Current Company: Banana cream pie from the other company (re offer)? *Leveling:</p><p>---</p><p> Switching Gears: What does an ML Engineer at Facebook do?</p><p>&ldquo;Here at FB, an ML Engineer is a hybrid between a data scientist and software engineer. At other companies, data scientists build the models and then hand them off to engineers who implement them. **At Facebook, the ML engineer does both*** They are responsible for the full end-to-end lifecycle of the machine learning model. All the way from design to implementation. Most of our machine learning teams spend their time 70 to 60% model building, and 30 to 40% writing production level code (productionalizing). &ldquo;</p> <p> Teams @ ML They will have industry experience working on a range of classification, recommendation and searching problems, e.g. issue detection, recommendation systems, search ranking, flow optimization. The position will involve taking these skills and applying them to build a solution system to help businesses on Facebook to address issues with using our product. They will bring the ability to own the whole Machine Learning life cycle, define strategy and projects, and drive excellence across teams.</p>`;
+  added.append();
+  console.log("Clicked");
+});
+
+pageIos.addEventListener("click", function() {
+  const deleted = document.getElementById("container2-details");
+  // deleted.remove();
+  const added = deleted.innerHTML = "<p>**TECHNICAL KNOWLEDGE QUESTIONS**<br>[Need at least 3 out of 5, candidate chooses either Swift or Objective-C]</p><p>Objective-C Questions</p><p>1) Which of the following could not use the &ldquo;copy&rdquo; attribute in a property? (Choose all that apply)<br>A. NSArray<br>B. NSInteger<br>C. NSString<br>D. UIView</p><p>ANSWER: A and C (while not optimal, it&rsquo;s acceptable if candidate picks only 1). Use copy when you want to guarantee the state of the object. With NSArray and NSString that is the case, we want the local changes to stay local only and maintain the state NSInteger is not an object so it doesn't make sense. UIView usually hold references to other internal objects and state not local only</p><p>2) Which of these cannot be inserted into an NSMutableArray?<br></br>A. UIViewController <br></br> B. NSURLRequest<br>C. UIColor<br>D. CGPoint</p><p>ANSWER: D<br>Only objects can be inserted to NSMutableArray<br>CGPoint is not an object it's a structure</p><p>3) Which of the following property modifiers is best to use for a delegate property?<br>A. Copy<br>B. Strong <br>C. Weak<br>D. Unsafe Unretained</p><p>ANSWER: C<br>Copy will create a copy of the delegate which doesn't make sense for complex objects<br>Strong will retain the delegate and sometimes may cause a retain cycle<br>Weak is the right answer since it doesn't retain the delegate and will be set to nil when reference count is 0. Unsafe_unretained is like assign and may potentially leave dangling pointers</p><p>4) Which of these methods should not be called directly?<br>A. sizeThatFits<br>B. sizeToFit <br>C. layoutSubviews<br>D. setNeedsLayout</p><p>ANSWER: C<br>You should implement -layoutSubviews, but the system will call it at the end of each event loop if you've called setNeedsLayout So calling setNeedsLayout results in the system knowing that the view needs to be laid out. So it will be called layoutSubviews</p><p>5) Which of the following is NOT a mechanism that is used to decouple classes:<br>A. Delegation<br>B. Mutex<br>C. Notification<br>D. Blocks</p><p>ANSWER: B<br>Delegation, Notification and blocks are ways to communicate between objects of different classes. Mutex is a program object that allows multiple program threads to share the same resource, is not used in context of decoupling at all</p>";
+  added.append();
+  console.log("Clicked");
+});
